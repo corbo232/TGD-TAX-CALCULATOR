@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-display">
+            <div class="display" id="total-display">Total Amount: €0.00</div>
+            <div class="display" id="tax-display">Tax Rate: 0%</div>
+            <div class="display" id="original-display">Original Amount: €0.00</div>
+            <div class="display" id="tax-added-display">Tax Added: €0.00</div>
+        </div>
+        <div class="calculator-inputs">
+            <input type="number" id="total-amount" placeholder="Total Amount (€)" step="1">
+            <input type="number" id="tax-rate" placeholder="Tax Rate (%)" step="1">
+            <button class="btn calculate" onclick="calculateTax()">Calculate</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
